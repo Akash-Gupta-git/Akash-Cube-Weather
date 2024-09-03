@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="front-body">
+        <nav>
+            <div id="icon-container">
+                <div id="logo-container"><image class="logo" src="img folder/rubik-logo.jpeg" title="rubik logo" > <h1>Cube Weather</h1></div>
+                    <!-- <div id="home">Akash</div> -->
+                    <div id="weather-inp">
+                        <div id="input-container">
+                        <label for="cityname"></label> 
+                        <input id="input-box" type="text" placeholder="City Name"></input>
+                        <button id="submit-btn" type="submit" onclick="SearchbtnFunction()">Search</button>
+                        
+                    </div>
+                    <h1 id="check">Check the weather forecast   </h1>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="error-container">
+        <h1>Location not found !</h1>
+        <br>
+        <image class="error-img" title="error" src="img folder/error.jpeg"></image>
+    </div>
+    <main>
+
+        <div id="countryName"><span class="showOutput"></span><span class="nationality"></span></div>
+        <div id="containerMain">
+            <div id="main-container1">
+                <div class="one">
+                    <div id="Show"><div id="weather-img" ></div></div>
+                    <div id="degree"><span class="degreOutput">Temp<sup>°C</sup></span><p class="degree-description">desc</p></div>
+                </div>
+                <div id="process">
+                    <hr><div class="process-box Humidity">Humidity <span class="humOutput">77<p>%</p></span></div>
+                    <hr><div class="process-box Pre">Precipitation <span class="preOutput">0<p>%</p></span></div>
+                    <hr><div class="process-box wind">wind <span class="windOutput">2.57<p>Km/h</p></span></div>
+                    <hr>
+                </div>
+
+            </div>
+            
+            <div id="main-container2">
+                
+                
+                
+                <div class="right svelte-131cpfw">
+                        <div id="process-container">
+                            <div id="process-name">
+                                <label for="temp"></label>
+                                <button onclick="SearchbtnFunction()" onclick="Temp">Temp</button> <button onclick="SearchbtnFunction()" onclick="Precipitation">Precipitation</button> <button onclick="SearchbtnFunction()" onclick="Wind">Wind</button>
+                            </div>
+                            <div id="show-process">
+                                <div id="graph-container1">
+                                    <div class="strips-lineX" ></div>
+                                </div>
+                                <div id="graph-container">
+
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle "></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                    <div id="graph"><p class="presentage">0°</p><div class="rectangle"></div><p class="Progress-Name"></p></div>
+                                            
+                                </div>
+                                
+                                
+
+                            </div>
+                            <div id="time">Weather Progress</div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <span id="devlpDate"><p>© july 2024  </p></span>
+            <span id="about-container">
+                <p>Developed by <a href="" target="_blank" rel="noreferrer">Akash Gupta</a></p>  
+            </span>
+            <span id="contact-container">
+                <p>Connect with Team</p>
+                <a href="" area-label="Join My WhatsApp Channel" target="_blank" rel="noreferrer" class="mr-2 whatsapp-icon"><i class="bi bi-whatsapp"></i> </a>
+                <a href="" area-label="LinkedIn Profile" target="_blank" rel="noreferrer" class="mr-2 linkedin-icon"><i class="bi bi-linkedin"></i> </a>
+                <a href="" area-label="Subscribe My Youtube Channel" target="_blank" rel="noreferrer" class="mr-2 youtube-icon"><i class="bi bi-youtube"></i> </a>
+                <a href="" area-label="Follow Me on Instagram" target="_blank" rel="noreferrer" class="mr-2 instagram-icon"><i class="bi bi-instagram"></i></a>  
+            </span>
+        </div>
+    </footer>
+
+
+
+        <script src="script.js"></script>
+    </body>
+    </html>
