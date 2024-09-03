@@ -1,5 +1,9 @@
+
 let input = document.querySelector("#input-box")
 let Searchbtn = document.getElementById("submit-btn");
+
+
+  
 // if()
 
 
@@ -10,12 +14,13 @@ async function checkWeather(city){
      
     const weather_data  = await fetch(`${url}`).then(response => response.json());
     console.log(weather_data);
+    let containerMain = document.querySelector("#containerMain")
     let front_body = document.querySelector("#front-body")
     let iconContainer = document.querySelector("#icon-container")
     if(weather_data.cod == `404` || weather_data.cod == '400')
     {
         document.querySelector("#error-container").style.display = "grid";
-        // document.querySelector("#Display-container-main").style.display = "none";
+        document.querySelector("#countryName").style.display = "none";
         document.querySelector("#containerMain").style.display = "none";
         document.querySelector("#check").style.display = "none";
         document.querySelector("#weather-inp").style.height = "200px";
@@ -26,7 +31,9 @@ async function checkWeather(city){
          }
          else {
              document.querySelector("#error-container").style.display = "none";
-            document.querySelector("#containerMain").style.display = "flex";
+            containerMain.style.display = "flex";
+            containerMain.style.backgroundColor = "black"
+            containerMain.style.color = "white"
             document.querySelector("#check").style.display = "none";
             document.querySelector("#weather-inp").style.height = "200px";    
             front_body.style.height = "100%";
@@ -103,4 +110,3 @@ function SearchbtnFunction() {
             }
         } 
 }
-
