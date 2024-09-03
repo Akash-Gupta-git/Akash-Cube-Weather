@@ -249,7 +249,7 @@
             animation: btn 0.7s infinite linear;
         }
         .right button:active{
-            /* background-color: rgb(1, 147, 185); */
+            background-color: grey;
         }
         #process-name {
             width: 100%;
@@ -284,7 +284,7 @@
             width: 100%;
             height: 0.5%;
             background-color: rgb(24, 23, 23);
-            bottom: 14px;
+            bottom: 8px;
             position: absolute;
 
         }
@@ -383,4 +383,12 @@
             color: white;
             font-size: 15px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } 
+         #footer-container #contact-container {
+            /* width: 100%; */
+            height: 100%;
+            padding: 0px 8px;
+        }
+        #contact-container a {
+            font-size: 17px;
         }
