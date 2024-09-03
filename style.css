@@ -1,381 +1,386 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body {
-    background-color: black;
-    color: white;
-}
-#front-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("https://imgs.search.brave.com/Gf7suFF73WIff_8onfvDBM8AVXhHgxRGVbUlI_jIQ5M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjE1NTM4NzMtZTg0/OTFhNTY0ZmQwP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZpeGxpYj1y/Yi00LjAuMyZpeGlk/PU0zd3hNakEzZkRC/OE1IeHpaV0Z5WTJo/OE1UQjhmSGRsWVhS/b1pYSjhaVzU4TUh4/OE1IeDhmREE9.jpeg");
-    /* background-color: yellow; */
-}
-nav {
-    width: 100%;
-    padding: 30px;   
-    color: black;
-    position: static;
-}
-#icon-container {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border: 2px solid black;
-}
-nav #logo-container {
-    /* width: 100%; */
-    /* height: 90px; */
-    /* background-color: white; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-#logo-container .logo{
-    width: 50px;
-    height: 50px;
-    mix-blend-mode: darken;
-}
-#logo-container h1{
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: sans-serif;
-}
-#containerMain {
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    display: none;
-}
-
-#weather-inp {
-
-    height: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* background-color: rgba(208, 244, 250, 0.8); */
-    /* background-size: 100% 100%; */
-    /* background-repeat: no-repeat; */
-}
-
-#input-container {
-    gap: 1vw; 
-    width: 100%;
-    display:flex;
-    height: 200px;
-    color: white;
-    flex-wrap: wrap;
-    align-items: center; 
-    justify-content: center;
-    background: linear-gradient(black, rgb(38, 230, 38), black);
-}
-#input-box {
-    padding: 4px;
-    width: 65%;
-    height: 50px;
-    font-size: 16px;
-    border: none;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-#submit-btn {
-    width: 20%;
-    height: 50px; 
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: skyblue;
-    box-shadow: 0px 0px 40px 6px skyblue;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 8px;
-    font-weight: 900;
-    border: none;
-    font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    cursor: pointer;
-
-}
-#submit-btn:active {
-    background-color: rgb(98, 167, 194)
-}
-#countryName {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 55px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 900;
-    font-family:  sans-serif;
-}
-
-
-#main-container1 {
-    width: 100%;
-    height: 100%;
-    /* background-color: grey; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;          
-
-}
-.one {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#Show {
-   
-    width: 300px;
-    height: 220px;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    font-family: Tahoma,  'Arial Narrow Bold',;         
-    cursor: pointer;
-    /* background: white; */
-    border: 1px solid grey;
-    border-radius: 9px;
-    margin: 20px 10px;
-    animation: 13s ease-in 1s infinite reverse both running slidein;
-
-}
-#weather-img {
-
-    width: 82%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: none;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlyCloudyDayV2.svg");
-}
+   * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
         
-#degree {  
-    font-size: 4.6em;
-    flex-direction: column;
-    font-weight: 900;
-    padding:  10px;
-    margin: 0px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#degree .degree-description{
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px;
-}
-
-#process {
-    width: 90%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-#process hr{
-    background-color: grey;
-}
-.process-box  {
-    width: 100%;
-    height: 100%;
-    font-size: 22px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.process-box span {
-    display: inline-block;
-    padding: 10px;
-}
-#process p {
-    display: inline-block;
-    justify-content: center;
-}
-#main-container2 {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.right {
-    width: 100%;
-    height: 100%;
-    padding: 45px;
-}        
-.right button{
-    padding: 6px 15px;
-    margin: 2px;
-    background-color: rgba(36, 34, 34, 0.8);
-    border-radius: 5px;
-    border: none;
-    color: white;
-    animation: btn 0.7s infinite linear;
-}
-.right button:active{
-    /* background-color: rgb(1, 147, 185); */
-}
-#process-name {
-    width: 100%;
-    /* background-color: orange; */
-}
-
-
-
-#show-process {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: green; */
-}
-#show-process #graph-container {
-    width: 90%;
-    height: 370px;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    /* background-color: blueviolet; */
-}
-#graph-container1 {
-    width: 45%;
-    height: 370px;
-    border-left: 2px solid rgb(24, 23, 23);            
-    position: absolute;
-}
-.strips-lineX {
-    width: 100%;
-    height: 0.5%;
-    background-color: rgb(24, 23, 23);
-    bottom: 8px;
-    position: absolute;
-
-}
-#graph {
-    /* width: 100%; */
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-
-    
-}
-#graph .rectangle {
-    width: 100%;
-    height: 1%; 
-    background-color: rgb(196, 6, 6);
-    margin: 10px;
-}
-#graph .Progress-Name {
-    transform: rotate(45deg);
-}
-#time {
-    font-size: 24px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
- @media  (max-width: 1060px) {
-    #containerMain { flex-wrap: wrap;}
-    #graph-container1 { width: 90%; }
-
-} 
-#check{
-    width: 100%;
-    height: 100%;
-    padding: 20px 0px;
-    font-size: 26px;
-    font-weight: 900;
-    text-align: center;
-    color: rgb(7, 2, 41);
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+        }
+        #front-body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("https://imgs.search.brave.com/Gf7suFF73WIff_8onfvDBM8AVXhHgxRGVbUlI_jIQ5M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjE1NTM4NzMtZTg0/OTFhNTY0ZmQwP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZpeGxpYj1y/Yi00LjAuMyZpeGlk/PU0zd3hNakEzZkRC/OE1IeHpaV0Z5WTJo/OE1UQjhmSGRsWVhS/b1pYSjhaVzU4TUh4/OE1IeDhmREE9.jpeg");
+            /* background-color: yellow; */
+        }
+        nav {
+            width: 100%;
+            padding: 30px;   
+            color: black;
+            position: static;
+        }
+        #icon-container {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 2px solid black;
+        }
+        nav #logo-container {
+            /* width: 100%; */
+            /* height: 90px; */
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 2px 0px;
+        }
+        #logo-container .logo{
+            width: 50px;
+            height: 50px;
+            mix-blend-mode: darken;
+            cursor: pointer;
+        }
+        #logo-container h1{
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        #containerMain {
+            width: 100%;
+            height: 100%;
+            padding: 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            display: none;
+        }
         
-#error-container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: none;
-    color: black;
-}
-#error-container .error-img {
-    width: 500px;
-    height: 350px;
-    mix-blend-mode: darken;
-}
-/* #error-container h1{
-} */
-#contant {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contant .logo{
-    width: 50px;
-    height: 50px;
-    mix-blend-mode: darken;
-}
-#contant h1{
-    font-size: 30px;
-    display: inline-block;
-    margin: 4vw 0vw;
-}
+        #weather-inp {
+        
+            height: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* background-color: rgba(208, 244, 250, 0.8); */
+            /* background-size: 100% 100%; */
+            /* background-repeat: no-repeat; */
+        }
 
-#footer-container { 
-    width: 100%;
-    height: 100%; 
-    text-align: center; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    bottom: 0px;
-    padding: 20px 0px;
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+        #input-container {
+            gap: 1vw; 
+            width: 100%;
+            display:flex;
+            height: 200px;
+            color: white;
+            flex-wrap: wrap;
+            align-items: center; 
+            justify-content: center;
+            background: black;
+        }
+        #input-box {
+            padding: 4px;
+            width: 65%;
+            height: 50px;
+            font-size: 16px;
+            border: none;
+            border-bottom-right-radius: 8px;
+            border-top-left-radius: 8px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+        }
+        #submit-btn {
+            width: 20%;
+            height: 50px; 
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            box-shadow: 0px 0px 40px 6px skyblue;
+            border-bottom-right-radius: 8px;
+            border-top-left-radius: 8px;
+            font-weight: 900;
+            border: none;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor: pointer;
+
+        }
+        #submit-btn:active {
+            background-color: rgb(98, 167, 194)
+        }
+        #countryName {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+            font-family:  sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+
+        #main-container1 {
+            width: 100%;
+            height: 100%;
+            /* background-color: grey; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;          
+        
+        }
+        .one {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #Show {
+           
+            width: 300px;
+            height: 220px;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            font-family: Tahoma,  'Arial Narrow Bold',;         
+            cursor: pointer;
+            /* background: white; */
+            border: 1px solid grey;
+            border-radius: 9px;
+            margin: 20px 10px;
+            animation: 13s ease-in 1s infinite reverse both running slidein;
+        
+        }
+        #weather-img {
+
+            width: 82%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: none;
+            border: none;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: url("https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlyCloudyDayV2.svg");
+        }
+                
+        #degree {  
+            font-size: 4.6em;
+            flex-direction: column;
+            font-weight: 900;
+            padding:  10px;
+            margin: 0px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 9px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #degree .degree-description{
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+        
+        #process {
+            width: 90%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+        }
+        #process hr{
+            background-color: grey;
+        }
+        .process-box  {
+            width: 100%;
+            height: 100%;
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .process-box span {
+            display: inline-block;
+            padding: 10px;
+        }
+        #process p {
+            display: inline-block;
+            justify-content: center;
+        }
+        #main-container2 {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .right {
+            width: 100%;
+            height: 100%;
+            padding: 45px;
+        }        
+        .right button{
+            padding: 6px 15px;
+            margin: 2px;
+            background-color: rgba(36, 34, 34, 0.8);
+            border-radius: 5px;
+            border: none;
+            color: white;
+            animation: btn 0.7s infinite linear;
+        }
+        .right button:active{
+            /* background-color: rgb(1, 147, 185); */
+        }
+        #process-name {
+            width: 100%;
+            /* background-color: orange; */
+        }
+
+
+
+        #show-process {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: green; */
+        }
+        #show-process #graph-container {
+            width: 90%;
+            height: 370px;
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            /* background-color: blueviolet; */
+        }
+        #graph-container1 {
+            width: 45%;
+            height: 370px;
+            border-left: 2px solid rgb(24, 23, 23);            
+            position: absolute;
+        }
+        .strips-lineX {
+            width: 100%;
+            height: 0.5%;
+            background-color: rgb(24, 23, 23);
+            bottom: 24px;
+            position: absolute;
+
+        }
+        #graph {
+            /* width: 100%; */
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-direction: column;
+        
+            
+        }
+        #graph .presentage {
+            font-size: 14px;
+        }
+        #graph .rectangle {
+            width: 100%;
+            height: 1%; 
+            background-color: rgb(196, 6, 6);
+            margin: 10px;
+        }
+        #graph .Progress-Name {
+            transform: rotate(45deg);
+        }
+        #time {
+            font-size: 24px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+         @media  (max-width: 1060px) {
+            #containerMain { flex-wrap: wrap;}
+            #graph-container1 { width: 90%; }
+
+        } 
+        #check{
+            width: 100%;
+            height: 100%;
+            padding: 20px 0px;
+            font-size: 26px;
+            font-weight: 900;
+            text-align: center;
+            color: rgb(7, 2, 41);
+            background-color: white;
+            font-family: monospace
+        }
+
+                
+        #error-container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: none;
+            color: black;
+        }
+        #error-container .error-img {
+            width: 400px;
+            height: 350px;
+            mix-blend-mode: darken;
+        }
+        /* #error-container h1{
+        } */
+        #contant {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #contant .logo{
+            width: 50px;
+            height: 50px;
+            mix-blend-mode: darken;
+        }
+        #contant h1{
+            font-size: 30px;
+            display: inline-block;
+            margin: 4vw 0vw;
+        }
+
+        #footer-container { 
+            width: 100%;
+            height: 100%; 
+            text-align: center; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            bottom: 0px;
+            padding: 20px 0px;
+            background: linear-gradient(black, rgb(27, 27, 27));
+            color: white;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
